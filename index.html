@@ -30,11 +30,20 @@
 
   <div class="block">
     <h2>MIDI</h2>
-    <midi-player
-      src="/thunderstruck.mid"
-      sound-font="https://unpkg.com/@magenta/music@1.23.1/es6/soundfonts/sgm_plus"
-      controls>
-    </midi-player>  
-</div>
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terry</title>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/html-midi-player@1.5.0"></script>
+</head>
+<body>
+  <h1>Terry</h1>
+
+  <h2>MIDI</h2>
+  <midi-player src="/thunderstruck.mid" sound-font controls></midi-player>
 </body>
 </html>
+
