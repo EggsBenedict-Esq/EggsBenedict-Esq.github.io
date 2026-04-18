@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terry</title>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/html-midi-player@1.5.0"></script>
+
+  <style>
+    body {
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 0 20px;
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+    h1 { margin-bottom: 0.25rem; }
+    .block { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Terry</h1>
+  <p>Latest post and a MIDI.</p>
+
+  <div class="block">
+    <h2>Latest post</h2>
+    <p><a href="/posts/">Past posts →</a></p>
+  </div>
+
+  <div class="block">
+    <h2>MIDI</h2>
+    <midi-player
+      src="/1979.mid"
+      sound-font
+      visualizer="#myVisualizer">
+    </midi-player>
+
+    <midi-visualizer
+      type="piano-roll"
+      id="myVisualizer">
+    </midi-visualizer>
+  </div>
+</body>
+</html>
